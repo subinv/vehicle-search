@@ -1,0 +1,136 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    /*given to support in all OS*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container-data {
+    margin: 0 auto;
+    padding: 20px 30px;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+}
+
+
+/*for large screens i.e desktops and laptops*/
+
+@media (min-width: 768px) {
+    .container-data {
+        width: 750px;
+    }
+    .group-data,
+    .btn {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+        margin-top: 0;
+    }
+    #submit {
+        float: right;
+    }
+    .adjust-margin,
+    .btn {
+        margin-left: 3%;
+    }
+    .type-select {
+        width: 184px !important;
+    }
+    #search {
+        width: 250px !important;
+    }
+}
+
+.group-data,
+.btn {
+    margin-bottom: 0;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.container-data input,
+.type-select {
+    padding: 5px;
+    display: block;
+    border-width: 0.5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.container-data label {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#submit {
+    margin-top: 25px;
+    background-color: rgb(105, 105, 105);
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.search-block {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.search-data {
+    float: right;
+}
+
+#search {
+    width: 100%;
+    background: url(assets/search-icon.png) no-repeat scroll 96% 50%;
+    background-size: 20px 17px;
+}
+
+.table-data {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    border-radius: 0;
+    border-collapse: collapse;
+}
+
+.table-data td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.json-data {
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-collapse: collapse;
+}
+
+#json-data {
+    background-color: rgb(105, 105, 105);
+    color: rgb(255, 255, 255);
+    padding: 4px 5px;
+    border-radius: 7px;
+    font-size: 15px;
+    float: right;
+}
+
+#json-text {
+    clear: right;
+    margin-top: 10px;
+    width: 100%;
+    display: none;
+}
+
+.highlight-exact {
+    background-color: rgb(0, 128, 0);
+}
+
+.highlight-close-match {
+    background-color: rgb(255, 255, 0);
+}
